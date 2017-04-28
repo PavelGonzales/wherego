@@ -1,0 +1,41 @@
+:host
+  display flex
+  width 100vw
+  height 100vh
+
+.nav
+  margin auto
+
+  &__list 
+    list-style-type none
+    display flex
+    padding 0
+    margin 0
+  
+  &__item
+    width 200px
+    height 200px
+    border 2px solid rgba(19, 56, 148, 0.15)
+    border-radius 50%
+    display flex
+    justify-content center
+    align-items center
+    text-align center
+    margin-left 35px
+    margin-right 35px
+    cursor pointer
+    &:hover
+      box-shadow 0 3px 8px 0 rgba(19, 56, 148, 0.15)
+    
+    &.cinema
+      background-color #005397
+    &.theater
+      background-color #d9baad
+    &.events
+      background-color #e54b4b
+    &.random
+      background-color #32b67a
+    
+  &__icon
+    width 100px
+    height 100px

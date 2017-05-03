@@ -13,29 +13,57 @@
     margin 0
   
   &__item
-    width 200px
-    height 200px
-    border 2px solid rgba(19, 56, 148, 0.15)
-    border-radius 50%
+    // border 2px solid rgba(19, 56, 148, 0.15)
     display flex
+    flex-direction column
     justify-content center
     align-items center
     text-align center
     margin-left 35px
     margin-right 35px
     cursor pointer
-    &:hover
-      box-shadow 0 3px 8px 0 rgba(19, 56, 148, 0.15)
+    // &:hover
+    //   box-shadow 0 3px 8px 0 rgba(19, 56, 148, 0.15)
     
     &.cinema
-      background-color #005397
+      .nav__circle
+        background-color #005397
+      .nav__label
+        color #005397
+
     &.theater
-      background-color #d9baad
+      .nav__circle
+        background-color #d9baad
+      .nav__label
+        color #d9baad
+
     &.events
-      background-color #e54b4b
+      .nav__circle
+        background-color #e54b4b
+      .nav__label
+        color #e54b4b
+
     &.random
-      background-color #32b67a
+      .nav__circle
+        background-color #32b67a
+      .nav__label
+        color #32b67a
+
     
+  &__circle
+    width 200px
+    height 200px
+    border-radius 50%
+    display flex
+    justify-content center
+    align-items center
+    text-align center
+
+  &__label 
+    margin-top 25px
+
   &__icon
     width 100px
     height 100px
+    path
+      fill #fff

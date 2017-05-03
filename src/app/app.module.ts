@@ -12,6 +12,8 @@ import { TheaterComponent } from './pages/theater/theater.component';
 import { EventsComponent } from './pages/events/events.component';
 import { RandomComponent } from './pages/random/random.component';
 
+import { CinemaService } from './services/cinema.service';
+
 const appRoutes: Routes =[
     { path: '', component: MainComponent},
     { path: 'cinema', component: CinemaComponent},
@@ -37,7 +39,7 @@ const appRoutes: Routes =[
     InlineSVGModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [CinemaService],
   bootstrap: [AppComponent]
 })
 

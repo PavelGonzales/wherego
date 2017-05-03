@@ -30,7 +30,7 @@ const appRoutes: Routes =[
     MainComponent,
     TheaterComponent,
     EventsComponent,
-    RandomComponent
+    RandomComponent,
   ],
   imports: [
     BrowserModule,

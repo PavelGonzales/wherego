@@ -4,9 +4,11 @@
        [inlineSVG]="'./app/images/back.svg'"></div>
   <h1 class="page__title">На какой<br/>
     <span>фильм пойдем</span>
+    <!--<span>{{ title }}</span>-->
   </h1>
   <div class="page__poster">
+    <img src="{{ poster }}" alt="">
     <div class="page__preview" [inlineSVG]="'./app/images/cinema.svg'"></div>
   </div>
-  <button class="page__button">press</button>
+  <button class="page__button" (click)="showMovie()">press</button>
 </div>

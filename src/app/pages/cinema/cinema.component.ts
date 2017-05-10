@@ -11,24 +11,20 @@ export class CinemaComponent implements OnInit {
   poster = null;
   movies = [];
 
-  constructor(private cinemaService: CinemaService) {
-    console.log(this.movies);
-  }
+  constructor(private cinemaService: CinemaService) { }
 
   ngOnInit(){
     this.cinemaService.getData().subscribe((movies) => {
       console.log('movies в subscribe', movies)
       this.movies = movies;
-      // this.title = this.movies[0].title;
+      this.poster = this.movies[0].poster.image;
     });
-    // console.log('movies', this.cinemaService.getData());
-    console.log('movies', this.movies);
-    
   }
 
   showMovie() {
-    this.poster = this.movies[0].poster;
-    this.title = this.movies[0].title;
+    console.log('movies', this.movies);
+    // this.poster = this.movies[0].poster;
+    // this.title = this.movies[0].title;
   }
 
 
